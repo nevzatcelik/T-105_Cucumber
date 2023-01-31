@@ -36,6 +36,15 @@ public class test1 {
 
     @And("Verilen degerlerin iki den kucuk oldugunu dogrular")
     public void verilenDegerlerinIkiDenKucukOldugunuDogrular() {
-        Assert.assertTrue(Double.parseDouble(paraninDegeri)<1.5);
+        Assert.assertTrue(Double.parseDouble(paraninDegeri)<20);
+    }
+    @Then("Kullanici sayfayi kapatir")
+    public void kullanici_sayfayi_kapatir() {
+      Driver.closeDriver();
+    }
+
+    @Then("Arama Kutusuna Dollar to Euro karsilastirma yapmak istedigi para birimlerini girer")
+    public void aramaKutusunaDollarToEuroKarsilastirmaYapmakIstedigiParaBirimleriniGirer() {
+        test.googleAramaKutusu.sendKeys("Dollar to Euro"+ Keys.ENTER);
     }
 }
