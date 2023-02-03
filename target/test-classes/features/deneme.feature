@@ -1,4 +1,4 @@
-@t105
+@teb
  Feature: US ISMI
 
    Background: arama yapilincaya kadar olusan islemler

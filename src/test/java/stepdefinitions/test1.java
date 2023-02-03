@@ -26,6 +26,8 @@ public class test1 {
     @Then("Arama Kutusuna karsilastirma yapmak istedigi para birimlerini girer")
     public void arama_kutusuna_karsilastirma_yapmak_istedigi_para_birimlerini_girer() {
     test.googleAramaKutusu.sendKeys("Euro to Dollar"+ Keys.ENTER);
+        test.cookies.click();
+
     }
     @Then("Para birimlerinin karsilastirmasini alir")
     public void para_birimlerinin_karsilastirmasini_alir() {
